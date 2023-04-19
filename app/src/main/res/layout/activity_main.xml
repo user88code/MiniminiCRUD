@@ -19,7 +19,8 @@
         app:searchHintIcon="@null"
         app:queryHint="Search..."
         android:focusable="false"
-
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:searchIcon="@drawable/baseline_search_24"
         android:background="@drawable/lavender_border"/>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -30,6 +31,7 @@
         android:id="@+id/recyclerView"
         android:scrollbars="vertical"
         android:layout_marginTop="20dp"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -37,7 +39,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="40dp"
-
-        app:tint = "@color/white"/>
+        android:backgroundTint="@color/Lavender"
+        app:tint = "@color/white"
+        android:src="@drawable/baseline_add_24"/>
 
 </RelativeLayout>
